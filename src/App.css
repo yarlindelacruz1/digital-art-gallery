@@ -1,51 +1,65 @@
+/* ==== RESPONSIVE IMAGES ==== */
 .App img {
   width: 100%;
-  max-width: 200px; /* Adjust to your preferred size */
+  max-width: 200px; /* Desktop default */
   height: auto;
   border-radius: 8px;
 }
 
+@media (max-width: 480px) {
+  .App img {
+    max-width: 150px; /* Mobile adjustment */
+  }
+}
 
 /* ==== GLOBAL COLORS ==== */
 :root {
---background-color: #FFFFFF; /* White */
---text-color: #000000; /* Black */
---header-footer-color: #B1D2E0; /* Light Blue */
---accent-color: #A1C9B0; /* Sage Green */
+  --background-color: #FFFFFF;      /* White */
+  --text-color: #000000;            /* Black */
+  --header-footer-color: #B1D2E0;   /* Light Blue */
+  --accent-color: #A1C9B0;          /* Sage Green */
 }
+
 /* ==== GLOBAL TYPOGRAPHY ==== */
 /* Page Title (Poiret One) */
 .page-title {
-font-family: &quot;poiret-one&quot;, sans-serif;
-font-weight: 400;
-font-style: normal;
-color: var(--text-color);
+  font-family: "poiret-one", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
 }
+
 /* Artwork Title (Condor Condensed) */
 .artwork-title {
-font-family: &quot;condor-condensed&quot;, sans-serif;
-font-weight: 400;
-font-style: normal;
-color: var(--text-color);
+  font-family: "condor-condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
 }
-/* Footer or Art Info (Proxima Nova Extra Condensed Light) */
-.footer-text, .art-info {
-font-family: &quot;proxima-nova-extra-condensed&quot;, sans-serif;
-font-weight: 300;
-font-style: normal;
-color: var(--text-color);
-}
-/* ==== LAYOUT COLORS ==== */
 
+/* Footer or Art Info (Proxima Nova Extra Condensed Light) */
+.footer-text,
+.art-info {
+  font-family: "proxima-nova-extra-condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--text-color);
+}
+
+/* ==== LAYOUT COLORS ==== */
 body {
-background-color: var(--background-color);
-color: var(--text-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
-header, footer {
-background-color: var(--header-footer-color);
+
+header,
+footer {
+  background-color: var(--header-footer-color);
 }
-button, .highlight {
-background-color: var(--accent-color);
+
+button,
+.highlight {
+  background-color: var(--accent-color);
 }
 
 /* ==== APP CONTAINER ==== */
@@ -53,11 +67,13 @@ background-color: var(--accent-color);
   text-align: center;
   background-color: var(--background-color);
   color: var(--text-color);
+  min-height: 100vh; /* Ensures full-page background */
 }
 
 /* ==== LOGO ==== */
 .App-logo {
-  height: 40vmin;
+  width: 150px;
+  height: auto;
   pointer-events: none;
 }
 
@@ -70,7 +86,8 @@ background-color: var(--accent-color);
 /* ==== HEADER ==== */
 .App-header {
   background-color: var(--header-footer-color);
-  min-height: 100vh; 
+  min-height: auto; /* Prevent images from stretching */
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,6 +100,7 @@ background-color: var(--accent-color);
 .App-link {
   color: var(--accent-color);
   text-decoration: none;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease; /* Smooth hover */
 }
 
 .App-link:hover {
