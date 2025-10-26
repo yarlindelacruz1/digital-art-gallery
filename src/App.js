@@ -13,7 +13,6 @@ function App() {
       <Header/>
 
       <Routes>
-        <Route path="/home" element={<Home />} />
         <Route path="/images" element={<Images />} />
         <Route path="/videos" element={<Videos />} />
         <Route path="/digital-art" element={<Digitalart />} />

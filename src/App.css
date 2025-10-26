@@ -77,25 +77,25 @@ background-color: var(--accent-color);
     transform: rotate(360deg);
   }
 }
-
+*/
 
 
 
 
 
 .header {
-  padding: 200px;
+  padding: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #292929;
-  background-color: #f3f3f3;
+  background-color: #F9F9F9;
 }
 
 .header-container {
   position: relative;
   width: 100%;
-  height: 300px; /* change height if needed */
+  height: 600px; /* change height if needed */
   overflow: hidden;
 }
 
@@ -104,6 +104,18 @@ background-color: var(--accent-color);
   height: 100%;
   object-fit: cover;
   display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-text {
@@ -119,51 +131,66 @@ background-color: var(--accent-color);
 
 
 .title {
-  font-size: 22px;
+  font-size: 150px;
   font-weight: bold;
-  color: #222;
+  color: #0d69cb;
+  text-align: center;
+  font-family: "poppins";
 }
 
 .navList {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 20px;
   margin: 0;
   padding: 0;
 }
 
 .navList li a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 500;
   transition: color 0.3s;
+  font-family:"Open sans";
 }
 .navList li a:hover {
-  color: #000;
+  color: #0d69cb;
 }
+
+/* footer information */
 
 .footer {
-  padding: 200px;
+  padding: 60px;
   text-align: center;
+  font-family: "poppins";
   border-top: 2px solid #ddd;
-  background-color: #fff;
-  margin-top: 40px;
-  font-size: 22px;
+  background-color: #0d69cb;
+} 
+.footer h3{
+  margin-top: 10px;
+  font-size: 50px;
   font-weight: bold;
 }
+.footer p {
+   font-size: 1rem;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family:"Open sans";
+}
 
-/* --------------------
-  Main Content Styles
--------------------- */
+/*   Main Content Styles */
+
+
 .main-content {
   max-width: 1200px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-/* --------------------
-  Gallery Grid
--------------------- */
+/* Gallery Grid */
+
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -193,7 +220,17 @@ background-color: var(--accent-color);
   padding: 10px;
   font-size: 18px;
 }
-
+.close-button {
+  background-color: transparent;
+  color: fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  position: absolute;
+}
+.close-button:active {
+  background-color: #0d69cb;
+  transform: scale(0.95);
+}
 /* --------------------
   Responsive Typography
 -------------------- */

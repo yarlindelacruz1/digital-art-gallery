@@ -33,7 +33,13 @@ function Gallery({ items, type }) {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <h3>{selectedItem.title}</h3>
             <p>{selectedItem.description}</p>
-            <button onClick={() => setSelectedItem(null)}>Close</button>
+              <button 
+                onClick={() => setSelectedItem(null)} 
+                className="close-button"
+              >
+                Close
+              </button>
+
           </div>
         </div>
       )}
@@ -42,21 +48,21 @@ function Gallery({ items, type }) {
 }
 
 const images = [
-  { id: 1, title: "Galaxy", src: "/Users/yarlindelacruz/digital-art-gallery/src/Components/M16SHO.jpeg", description: "Beautiful sunset over the ocean." },
-  { id: 2, title: "Mountain", src: "images/img2.jpg", description: "Snowy mountain peak." },
-  { id: 3, title: "Forest", src: "images/img3.jpg", description: "Green forest with sunlight." },
+  { id: 1, title: "Innocence in Bloom", src: "/Images/Innocence.PNG", description: "By Tuesdae Castillo. Half hidden behind the flowers, a child’s eyes tell their own story. Exploring both a feeling of curiosity and comfort. It’s quiet while showing innocence, beauty, and small moments." },
+  { id: 2, title: "Violet Daydreams", src: "/Images/Violet-daydreams.PNG", description: "By Tuesdae Castillo. Bright purple flowers stretching toward the sunlight showcasing a moment of stillness and light on a warm day" },
+  { id: 3, title: "A Bend in the Journey", src: "/images/Header-1-a-bend.PNG", description: "By Tuesdae Castillo. The boardwalk curves gently through calm water and green trees. It’s a simple, peaceful scene that makes you want to slow down and see where the path leads." },
 ];
 
 const videos = [
-  { id: 1, title: "Art Timelapse", src: "videos/video1.mp4", description: "Watch the creation process." },
-  { id: 2, title: "Digital Painting", src: "videos/video2.mp4", description: "A digital painting from start to finish." },
-  { id: 3, title: "Animation Clip", src: "videos/video3.mp4", description: "Short animated art clip." },
+  { id: 1, title: "Alien Planet - 2022", src: "videos/Alien-planet.mp4", description: "Stancu creates moving digital paintings based in surrealism. They usually show space or the universe. In this video he brings you through a magical ethereal landscape in an unknown alien planet. Video is able to show surreal art in an entirely new media." },
+  { id: 2, title: "Banff National Park - 2023 ", src: "videos/Banff-national-park.mp4", description: "Begum creates digital media for relaxing and meditative spaces. In this video we see a landscape of Banff National Park shot entirely on drone footage.  The use of drones has created a new and beautiful way to enjoy nature. Began has shot and edited her film in a way that makes it art." },
+  { id: 3, title: "Portrtai- 2017", src: "videos/Video-portrait.mp4", description: "Iqbal created Illustrations video and photography for use in media.  His style is bright colors lots of movement and light. This portrait is a slow motion of a woman having color dust blown on her.  The movement adds a new level in interest in portraiture." },
 ];
 
 const digitalArt = [
-  { id: 1, title: "Glitch Art", src: "images/digital1.jpg", description: "Abstract glitch effect." },
-  { id: 2, title: "3D Render", src: "images/digital2.jpg", description: "Futuristic 3D render." },
-  { id: 3, title: "Pixel Art", src: "images/digital3.jpg", description: "Retro pixel art style." },
+  { id: 1, title: "Here Comes", src: "/images/Here-comes.jpg", description: "Citone present a digital collage multimedia pieces that fuses traditional drawing with graphic art skills. She creates a moody thoughtful atmosphere with brushstroke and image manipulation." },
+  { id: 2, title: "She Holds Life", src: "/images/She-holds-life.jpg", description: "Citone presents an digital collage my mixing and manipulating multiple existing images. The work shows a powerful image by mixing color black and white.." },
+  { id: 3, title: "Depth Of Thought", src: "/images/Depth-of-thought.jpg", description: "Citone here uses digital collage with traditional painting skills.  She uses multiple images with layers of digital paint to create the atmosphere." },
 ];
 
 export function Images() {
