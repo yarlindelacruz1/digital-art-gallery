@@ -14,7 +14,6 @@ function Header() {
           <div className="title">Pixel & Pulse Gallery</div>
           <nav>
             <ul className="navList">
-              <li><Link to="/">Home</Link></li>
               <li><Link to="/images">Images</Link></li>
               <li><Link to="/videos">Videos</Link></li>
               <li><Link to="/digital-art">Digital Art</Link></li>

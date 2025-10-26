@@ -33,7 +33,13 @@ function Gallery({ items, type }) {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <h3>{selectedItem.title}</h3>
             <p>{selectedItem.description}</p>
-            <button onClick={() => setSelectedItem(null)}>Close</button>
+              <button 
+                onClick={() => setSelectedItem(null)} 
+                className="close-button"
+              >
+                Close
+              </button>
+
           </div>
         </div>
       )}
