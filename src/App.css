@@ -1,3 +1,11 @@
+.App img {
+  width: 100%;
+  max-width: 400px; /* Adjust to your preferred size */
+  height: auto;
+  border-radius: 8px;
+}
+
+
 /* ==== GLOBAL COLORS ==== */
 :root {
   --background-color: #FFFFFF;      /* White */
