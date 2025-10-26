@@ -8,10 +8,44 @@
 
 /* ==== GLOBAL COLORS ==== */
 :root {
-  --background-color: #FFFFFF;      /* White */
-  --text-color: #000000;            /* Black */
-  --header-footer-color: #B1D2E0;   /* Light Blue */
-  --accent-color: #A1C9B0;          /* Sage Green */
+--background-color: #FFFFFF; /* White */
+--text-color: #000000; /* Black */
+--header-footer-color: #B1D2E0; /* Light Blue */
+--accent-color: #A1C9B0; /* Sage Green */
+}
+/* ==== GLOBAL TYPOGRAPHY ==== */
+/* Page Title (Poiret One) */
+.page-title {
+font-family: &quot;poiret-one&quot;, sans-serif;
+font-weight: 400;
+font-style: normal;
+color: var(--text-color);
+}
+/* Artwork Title (Condor Condensed) */
+.artwork-title {
+font-family: &quot;condor-condensed&quot;, sans-serif;
+font-weight: 400;
+font-style: normal;
+color: var(--text-color);
+}
+/* Footer or Art Info (Proxima Nova Extra Condensed Light) */
+.footer-text, .art-info {
+font-family: &quot;proxima-nova-extra-condensed&quot;, sans-serif;
+font-weight: 300;
+font-style: normal;
+color: var(--text-color);
+}
+/* ==== LAYOUT COLORS ==== */
+
+body {
+background-color: var(--background-color);
+color: var(--text-color);
+}
+header, footer {
+background-color: var(--header-footer-color);
+}
+button, .highlight {
+background-color: var(--accent-color);
 }
 
 /* ==== APP CONTAINER ==== */
