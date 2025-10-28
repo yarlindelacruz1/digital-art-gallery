@@ -1,10 +1,5 @@
+import '../App.css';
 
-
-/*function Footer (){
-    return(
-       <div className="footer">About Pixel & Pulse</div>
-    )
-}*/
 function Footer() {
   return (
     <div className="footer">
